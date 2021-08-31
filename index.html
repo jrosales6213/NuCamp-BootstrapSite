@@ -30,7 +30,7 @@
                     <h2>a better way to camp</h2>
                 </div>
                 <div class="col-md-4 col-xl-2 mt-4 d-flex ml-auto ">
-                   <a href="#reserveForm"> <button class="btn btn-info btn-lg text-nowrap">Reserve Campsite</button> </a>
+                    <a href="#reserveForm" role="button" class="btn btn-lg btn-info text-nowrap" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Reserve Campsite</a>
                 </div>
             </div>
         </div>
@@ -53,6 +53,7 @@
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><i
                                 class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -195,5 +196,10 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
+<script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
 
 </html> 
